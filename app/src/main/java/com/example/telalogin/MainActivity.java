@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void abrirTelaPrinc(){
-        Intent intent = new Intent(this,PrincActivity.class);
+        Intent intent = new Intent(this,HomeActivity.class);
         intent.putExtra("login", txtLogin.getText().toString());
         startActivity(intent);
     }

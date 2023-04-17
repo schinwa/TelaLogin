@@ -13,7 +13,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".PrincActivity"
+            android:name=".JogoActivity"
             android:exported="false" />
         <activity
             android:name=".CadastroActivity"
