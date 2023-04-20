@@ -11,7 +11,6 @@
         android:id="@+id/btnExcluir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="672dp"
         android:backgroundTint="#FF0303"
         android:lineSpacingExtra="8sp"
         android:text="Excluir Conta"
@@ -19,20 +18,29 @@
         android:textStyle="bold"
         android:typeface="normal"
         app:icon="@android:drawable/ic_menu_delete"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ok" />
 
     <Button
-        android:id="@+id/BtnIrac"
+        android:id="@+id/btnAC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="176dp"
-        android:text="Button"
+        android:text="Assassins Creed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="250dp"
+        android:text="Elder Ring"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAC" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

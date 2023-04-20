@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/game__3_"
-    tools:context=".JogoActivity">
+    tools:context=".Jogo2Activity">
 
     <TextView
         android:id="@+id/textView9"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="250dp"
-        android:text="Estuúdio:   Ubisoft"
+        android:text="Estuúdio:   Bandai"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,11 +66,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="152dp"
-        android:text="Lançamento:   27 de outubro de 2017"
+        android:text="Lançamento:   25 de fevereiro de 2022"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/ok"
@@ -89,13 +89,14 @@
         android:layout_width="289dp"
         android:layout_height="42dp"
         android:layout_marginStart="61dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="61dp"
-        android:text="Assassins Creed: Origins"
+        android:text="            Elder Ring"
         android:textColor="#430AC1"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,12 +114,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="149dp"
-        android:layout_height="232dp"
+        android:id="@+id/imageView2"
+        android:layout_width="173dp"
+        android:layout_height="203dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@drawable/ac_poster" />
+        app:srcCompat="@drawable/er_poster" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

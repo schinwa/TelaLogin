@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class JogoActivity extends AppCompatActivity {
+public class Jogo2Activity extends AppCompatActivity {
     public SQLiteDatabase bancoDados;
     public ArrayList<Integer> arrayIds;
     public Integer idSelecionado;
@@ -26,7 +26,7 @@ public class JogoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jogo);
+        setContentView(R.layout.activity_jogo2);
 
         avaliacao = (RatingBar) findViewById(R.id.avaliacao);
         ok = (Button) findViewById(R.id.ok);

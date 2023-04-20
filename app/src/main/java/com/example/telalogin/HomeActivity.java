@@ -10,14 +10,13 @@ import android.database.sqlite.SQLiteStatement;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
     public SQLiteDatabase bancoDados;
-    Button btnExcluir;
+    Button btnExcluir, btnAC, btnER;
     public ArrayList<Integer> arrayIds;
     public Integer idSelecionado;
     TextView textView9;
@@ -28,12 +27,28 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         btnExcluir = (Button) findViewById(R.id.btnExcluir);
+        btnAC = (Button) findViewById(R.id.btnAC);
+        btnER = (Button) findViewById(R.id.btnER);
         textView9 = (TextView) findViewById(R.id.textView9);
 
         btnExcluir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 confirmaExcluir();
+            }
+        });
+
+        btnAC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirTelaAc();
+            }
+        });
+
+        btnER.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirTelaEr();
             }
         });
 
@@ -80,11 +95,11 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void abrirTelaAc(){
-        BtnIrac.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                abrirTelaAc();
-            }
-        });
+        Intent intent = new Intent(this,JogoActivity.class);
+        startActivity(intent);
+    }
+    public void abrirTelaEr(){
+        Intent intent = new Intent(this,Jogo2Activity.class);
+        startActivity(intent);
     }
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TelaLogin">
         <activity
+            android:name=".Jogo2Activity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
